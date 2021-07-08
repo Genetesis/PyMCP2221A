@@ -563,7 +563,7 @@ class PyMCP2221A:
                 i]  # The I2C/SMBus system clock divider that will be used to establish the communication speed
         self.mcp2221a.write(buf)
         rbuf = self.mcp2221a.read(PACKET_SIZE)
-        time.sleep(0.008)
+        # time.sleep(0.008)
 
     #######################################################################
     # I2C Read
